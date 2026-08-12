@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La tarjeta revolving explicada con números reales, no con miedo — El Balance</title>
+<meta name="description" content="Cuánto pagas de más al mes con una tarjeta revolving, cómo leer el TAE y una plantilla para cancelarla en un plazo razonable.">
+
+<!-- Pega aquí tu meta-etiqueta de verificación de AdSense y el script de tu cuenta -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #FBEEE6; --card: #FFF8F2; --ink: #211A16; --ink-soft: #5B4E45;
+    --green: #2F5233; --green-deep: #1F3A23; --copper: #A8763E;
+    --line: #D9C4B3; --line-soft: #E7D7C9;
+    --font-display: 'Fraunces', serif; --font-body: 'Inter', sans-serif; --font-mono: 'IBM Plex Mono', monospace;
+  }
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } *{ animation-duration:0.01ms !important; transition-duration:0.01ms !important; } }
+  body{ margin:0; background: var(--bg); color: var(--ink); font-family: var(--font-body); -webkit-font-smoothing: antialiased; }
+  a{ color: inherit; }
+  :focus-visible{ outline: 2px solid var(--green-deep); outline-offset: 3px; }
+  .wrap{ max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  .masthead{ border-bottom: 1px solid var(--line); padding: 18px 0; }
+  .masthead .wrap{ max-width: 1080px; display:flex; justify-content:space-between; align-items:center; }
+  .brand{ font-family: var(--font-display); font-weight:700; font-size: 24px; text-decoration:none; color: var(--ink); }
+  .brand em{ font-style:italic; color: var(--green); }
+  .back{ font-family: var(--font-mono); font-size: 12px; text-decoration:none; color: var(--ink-soft); }
+  .back:hover{ color: var(--green); }
+
+  article{ padding: 44px 0 60px; }
+  .cat{ font-family: var(--font-mono); font-size: 12px; text-transform:uppercase; letter-spacing:0.08em; color: var(--copper); }
+  h1{ font-family: var(--font-display); font-weight:600; font-size: clamp(30px,5vw,44px); line-height:1.1; margin: 14px 0 18px; }
+  .meta{ font-family: var(--font-mono); font-size:12px; color: var(--ink-soft); display:flex; gap:14px; border-bottom:1px solid var(--line); padding-bottom:22px; margin-bottom: 32px; }
+
+  article p{ font-size: 17px; line-height: 1.75; color: var(--ink); margin: 0 0 22px; }
+  article h2{ font-family: var(--font-display); font-size: 24px; font-weight:600; margin: 40px 0 16px; }
+  article ul, article ol{ font-size:17px; line-height:1.75; padding-left: 22px; margin: 0 0 22px; }
+  article li{ margin-bottom: 8px; }
+  article strong{ color: var(--green-deep); }
+  blockquote{ border-left: 3px solid var(--copper); margin: 28px 0; padding: 4px 0 4px 20px; font-family: var(--font-display); font-style: italic; font-size: 19px; color: var(--ink-soft); }
+
+  table{ width:100%; border-collapse: collapse; margin: 24px 0; font-size: 15px; }
+  th, td{ text-align:left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th{ font-family: var(--font-mono); font-size: 12px; text-transform:uppercase; letter-spacing:0.04em; color: var(--ink-soft); }
+  td.num{ font-family: var(--font-mono); }
+
+  .ad-slot{ border: 1px dashed var(--line); background: var(--card); color: var(--ink-soft); font-family: var(--font-mono); font-size: 12px; text-align:center; padding: 22px 12px; margin: 36px 0; }
+
+  footer{ border-top: 1px solid var(--line); padding: 24px 0 40px; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); }
+  footer .wrap{ max-width:1080px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  footer a{ text-decoration:none; }
+  footer a:hover{ color: var(--green); }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a href="../index.html" class="brand">El <em>Balance</em></a>
+    <a href="../index.html" class="back">← Volver a portada</a>
+  </div>
+</header>
+
+<main class="wrap">
+<article>
+  <span class="cat">Deuda</span>
+  <h1>La tarjeta revolving explicada con números reales, no con miedo</h1>
+  <div class="meta">
+    <span>Edición nº 013</span>
+    <span>4 de agosto de 2026</span>
+    <span>6 min de lectura</span>
+  </div>
+
+  <p>La tarjeta revolving no es una estafa, aunque a veces se explique como si lo fuera. Es un producto financiero legal con una mecánica concreta que, si no se entiende bien, puede convertir una compra pequeña en una deuda que dura años. La diferencia entre usarla sin problema y quedarte atrapado en ella está, casi siempre, en no haber hecho esta cuenta a tiempo.</p>
+
+  <h2>Cómo funciona en realidad</h2>
+  <p>Con una tarjeta de crédito normal, si aplazas el pago, sueles devolver el total al mes siguiente o eliges pagar a plazos con un plan cerrado. Con una revolving, tú decides cuánto pagar cada mes —una cuota fija o un porcentaje del saldo—, y el resto se queda pendiente generando intereses sobre sí mismo. Ese "generando intereses sobre intereses" es la parte que cambia todo.</p>
+
+  <p>El problema no es pagar poco un mes puntual. El problema es que, si la cuota mensual es baja, gran parte de lo que pagas cubre solo los intereses, y la deuda principal apenas baja. Es perfectamente posible pagar durante dos años una tarjeta revolving y descubrir que el saldo pendiente sigue siendo casi el mismo que al principio.</p>
+
+  <h2>Un ejemplo con números</h2>
+  <p>Imagina una deuda de 1.500 euros con un TAE del 24% (una cifra habitual en este tipo de producto) y una cuota fija mensual de 45 euros:</p>
+
+  <table>
+    <thead>
+      <tr><th>Concepto</th><th>Aproximado</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Deuda inicial</td><td class="num">1.500 €</td></tr>
+      <tr><td>Cuota mensual</td><td class="num">45 €</td></tr>
+      <tr><td>De esa cuota, intereses (primer mes)</td><td class="num">~30 €</td></tr>
+      <tr><td>De esa cuota, capital amortizado</td><td class="num">~15 €</td></tr>
+      <tr><td>Tiempo aproximado en liquidarla</td><td class="num">más de 4 años</td></tr>
+    </tbody>
+  </table>
+
+  <p>El TAE exacto y la proporción entre capital e intereses varían según la entidad y el momento, pero el patrón es constante: cuota baja, plazo largo, coste total alto. Esa es la trampa silenciosa: la cuota parece asumible mes a mes, y por eso no se percibe como una deuda cara hasta que se hace la cuenta completa.</p>
+
+  <div class="ad-slot">Espacio de anuncio · AdSense In-article</div>
+
+  <h2>Cómo leer el TAE que viene en el contrato</h2>
+  <p>El TAE (tasa anual equivalente) es la cifra que de verdad importa, no el interés nominal que a veces se anuncia más pequeño. Incluye comisiones y la forma en que se capitalizan los intereses, así que es la comparación justa entre productos distintos. Si el documento de tu tarjeta no muestra el TAE con claridad, está en la información precontractual que la entidad está obligada a darte por ley: pídela si no la tienes.</p>
+
+  <h2>Plantilla para cancelarla en un plazo razonable</h2>
+  <ol>
+    <li><strong>Para de usarla ya.</strong> Cada compra nueva alarga el plazo, aunque la cuota se mantenga igual.</li>
+    <li><strong>Llama a la entidad y pide subir la cuota mensual</strong> al máximo que puedas asumir sin ahogarte. Es la palanca más eficaz: cuanto antes baje el capital, menos intereses totales pagas.</li>
+    <li><strong>Si tienes ahorros de bajo rendimiento</strong> en una cuenta corriente que no necesitas de forma inmediata, valora usarlos para amortizar parte del capital. El coste de esta deuda (20-27% TAE habitual) suele ser mayor que lo que ganarías teniendo ese dinero guardado.</li>
+    <li><strong>Pide un cambio a préstamo personal</strong> si el banco lo ofrece. Suele tener un interés bastante más bajo y un plazo cerrado, lo que evita el efecto "deuda que no baja".</li>
+    <li><strong>Cancela la tarjeta</strong> en cuanto quede a cero, no la dejes "por si acaso". Su disponibilidad es, precisamente, lo que facilita volver a caer en el mismo patrón.</li>
+  </ol>
+
+  <blockquote>Una cuota que parece pequeña no significa una deuda que se hace pequeña.</blockquote>
+
+  <p>No hay nada moralmente malo en haber tenido una tarjeta revolving; es un producto diseñado para no notarse hasta que se hace la cuenta. Pero una vez que se hace esa cuenta, casi siempre compensa acelerar la salida en lugar de dejar que el tiempo se encargue solo, porque en este caso el tiempo juega en tu contra, no a tu favor.</p>
+
+</article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 El Balance. Contenido con fines informativos, no es asesoramiento financiero.</span>
+    <span><a href="../index.html">Portada</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
