@@ -564,8 +564,11 @@
       <h3>Una cuenta clara cada semana</h3>
       <p>Los martes, un correo corto con la entrada nueva y un dato que quizá no sabías sobre tu dinero. Sin spam, sin venderte nada.</p>
     </div>
-    <form>
-      <input type="email" placeholder="tu correo" required>
+    <form action="https://formsubmit.co/rubenmartindelopez@gmail.com" method="POST">
+      <input type="email" name="email" placeholder="tu correo" required>
+      <input type="hidden" name="_subject" value="Nueva suscripción en El Balance">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
       <button type="submit">Suscribirme</button>
     </form>
   </section>
